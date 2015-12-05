@@ -81,6 +81,7 @@
             tokens = name.trim().toLowerCase().split(/[\s\-_\(\)\+]+/);
         }
 
+        var error;
         if (this.isPrivate()) {
             try {
                 this.validateNumber();
@@ -96,10 +97,11 @@
                 });
                 tokens = tokens.concat(this.id, national_number, international_number);
             } catch(ex) {
-                return ex;
+                error = ex;
             }
         }
         this.set({tokens: tokens});
+        return error;
     },
 
     sendMessage: function(body, attachments) {
