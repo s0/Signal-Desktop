@@ -601,13 +601,21 @@ input.search {
   .conversation ::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.15); }
   .conversation .panel {
-    height: 100%; }
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
     .conversation .panel .discussion-container {
-      height: calc(100% - 2 * 36px - 60px); }
+      flex-grow: 1;
+      position: relative; }
+      .conversation .panel .discussion-container .message-list {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%; }
 
 .group-member-list,
 .new-group-update,
-.message-list, .message-detail, .key-verification {
+.message-detail, .key-verification {
   height: 100%; }
 
 .key-verification {

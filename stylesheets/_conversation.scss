@@ -28,16 +28,26 @@
 
   .panel {
     height: 100%;
+    display: flex;
+    flex-direction: column;
 
     .discussion-container {
-      height: calc(100% - 2 * #{$header-height} - 60px);
+      flex-grow: 1;
+      position: relative;
+
+      .message-list {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 }
 
 .group-member-list,
 .new-group-update,
-.message-list, .message-detail, .key-verification {
+.message-detail, .key-verification {
   height: 100%;
 }
 
