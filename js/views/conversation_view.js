@@ -269,7 +269,7 @@
             var $attachmentPreviews = this.$('.attachment-previews'),
                 $bottomBar = this.$('.bottom-bar');
 
-            $bottomBar.outerHeight(
+            $bottomBar.height(
                     this.$messageField.outerHeight() +
                     $attachmentPreviews.outerHeight() + 1);
 

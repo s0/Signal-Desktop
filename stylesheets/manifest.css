@@ -424,7 +424,7 @@ img.emoji {
 .conversation-header {
   border-bottom: solid 1px #dadada;
   margin-bottom: 4px;
-  padding-bottom: 5px; }
+  padding-bottom: 15px; }
   .conversation-header .avatar {
     float: left;
     width: 36px;
@@ -594,7 +594,7 @@ input.search {
 .conversation {
   background-color: #ffffff;
   margin: 10px;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   height: calc(100% - 20px);
   border-radius: 10px; }
@@ -626,6 +626,9 @@ input.search {
           cursor: pointer; }
           .conversation .panel .discussion-container .message-list .timestamp:hover {
             text-decoration: underline; }
+    .conversation .panel .bottom-bar {
+      padding-top: 10px;
+      box-sizing: content-box; }
 
 .group-member-list,
 .new-group-update,
