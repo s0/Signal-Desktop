@@ -611,7 +611,21 @@ input.search {
         position: absolute;
         top: 0;
         height: 100%;
-        width: 100%; }
+        width: 100%;
+        margin: 0;
+        padding: 2em 8px 0;
+        overflow-y: auto; }
+        .conversation .panel .discussion-container .message-list:before {
+          display: block;
+          margin: -25px auto 10px;
+          content: " ";
+          height: 16px;
+          width: 16px;
+          border: solid 3px transparent; }
+        .conversation .panel .discussion-container .message-list .timestamp {
+          cursor: pointer; }
+          .conversation .panel .discussion-container .message-list .timestamp:hover {
+            text-decoration: underline; }
 
 .group-member-list,
 .new-group-update,
@@ -640,6 +654,8 @@ input.search {
   .message-detail .message-container .sender {
     display: none; }
 .message-detail .info {
+  max-width: 800px;
+  margin: 0 auto;
   padding: 1em; }
   .message-detail .info .label {
     font-weight: bold;
@@ -748,30 +764,13 @@ input.search {
   .outgoing.entry.pending .status:before {
     content: '...'; }
 
-.message-list {
-  position: relative;
-  margin: 0;
-  padding: 2em 0 0;
-  overflow-y: auto; }
-  .message-list:before {
-    display: block;
-    margin: -25px auto 10px;
-    content: " ";
-    height: 16px;
-    width: 16px;
-    border: solid 3px transparent; }
-  .message-list .timestamp {
-    cursor: pointer; }
-    .message-list .timestamp:hover {
-      text-decoration: underline; }
-
 .message-detail,
 .message-list {
   list-style: none; }
   .message-detail li,
   .message-list li {
     max-width: 800px;
-    margin: 0 8px 16px; }
+    margin: 0 auto 16px; }
     .message-detail li::after,
     .message-list li::after {
       visibility: hidden;
