@@ -422,19 +422,28 @@ img.emoji {
     display: block; }
 
 .conversation-header {
-  border-bottom: solid 1px #dadada;
-  margin-bottom: 4px;
-  padding-bottom: 15px; }
+  margin: -15px -15px 0;
+  padding: 15px;
+  position: relative;
+  /* box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1); */
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #e9e9e9; }
   .conversation-header .avatar {
     float: left;
     width: 36px;
     height: 36px;
     line-height: 36px; }
   @media (min-width: 900px) {
-    .conversation-header .avatar {
-      width: 70px;
-      height: 70px;
-      line-height: 70px; } }
+    .conversation-header {
+      padding: 10px; }
+      .conversation-header .avatar {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        margin: 5px 0 -80px 5px;
+        position: relative;
+        z-index: 100;
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2); } }
 
 .menu.conversation-menu button.drop-down {
   background: url("/images/arrow_drop_down.png") no-repeat center; }
@@ -597,7 +606,8 @@ input.search {
   padding: 15px;
   border-radius: 10px;
   height: calc(100% - 20px);
-  border-radius: 10px; }
+  border-radius: 10px;
+  overflow: hidden; }
   .conversation ::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.15); }
   .conversation .panel {

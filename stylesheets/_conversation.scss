@@ -21,6 +21,7 @@
   border-radius: 10px;
   height: calc(100% - 20px);
   border-radius: 10px;
+  overflow: hidden;
 
   ::-webkit-scrollbar-thumb {
     background: rgba(0,0,0,0.15);
