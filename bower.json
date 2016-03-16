@@ -6,6 +6,7 @@
   "private": true,
   "dependencies": {
     "jquery": "liliakai/jquery#2.1.1-ajax-nativetransport",
+    "jquery-textcomplete": "https://github.com/yuku-t/jquery-textcomplete.git#d7a401e",
     "underscore": "~1.7.0",
     "backbone": "~1.1.2",
     "protobuf": "~3.8.0",
@@ -97,6 +98,7 @@
   "concat": {
     "app": [
       "jquery",
+      "jquery-textcomplete",
       "long",
       "bytebuffer",
       "protobuf",
